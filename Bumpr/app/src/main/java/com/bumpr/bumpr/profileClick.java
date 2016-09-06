@@ -160,7 +160,7 @@ public class profileClick extends AppCompatActivity implements View.OnClickListe
         new Thread(new Runnable() {
             public void run() {
                 try{
-                    Log.d("myTag", "poop");
+                    Log.d("myTag", "hello");
                     //if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
                         BitmapFactory.Options options = new BitmapFactory.Options();
                     String realPath;
@@ -177,7 +177,7 @@ public class profileClick extends AppCompatActivity implements View.OnClickListe
                         realPath = getRealPathFromURI_API19(profileClick.this, data1.getData());
 
                         //Uri filePath = data.getData();
-                        Log.d("myTag", "poop1");
+                        Log.d("myTag", "hello1");
                         HttpURLConnection connection = null;
                         DataOutputStream outputStream = null;
                         DataInputStream inputStream = null;
@@ -197,7 +197,7 @@ public class profileClick extends AppCompatActivity implements View.OnClickListe
 
                         try
                         {
-                            Log.d("myTag", "poop2");
+                            Log.d("myTag", "hello2");
                             FileInputStream fileInputStream = new FileInputStream(new File(pathToOurFile) );
 
                             URL url = new URL(urlServer);
@@ -245,7 +245,7 @@ public class profileClick extends AppCompatActivity implements View.OnClickListe
                             fileInputStream.close();
                             outputStream.flush();
                             outputStream.close();
-                            Log.d("myTag", "poop3");
+                            Log.d("myTag", "hello3");
                         }
                         catch (Exception ex)
                         {
